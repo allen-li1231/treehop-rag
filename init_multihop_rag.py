@@ -55,14 +55,6 @@ if __name__ == '__main__':
         content_embeddings["dense_vecs"]
     )
 
-    # with open(f"embedding_data/{dataset_name}/{dataset_type}_query_sparse.pkl", "wb") as f:
-    #     pickle.dump(query_embeddings["lexical_weights"], f)
-    # with open(f"embedding_data/{dataset_name}/{dataset_type}_content_sparse.pkl", "wb") as f:
-    #     pickle.dump(content_embeddings["lexical_weights"], f)
-
-    # with open(f"embedding_data/{dataset_name}/multi_vec.pkl", "wb") as f:
-    #     pickle.dump(query_embeddings["colbert_vecs"], f)
-
     # save corresponding context array indices
     df_dataset["id"] = df_dataset.index
     df_dataset["text"] = df_dataset["body"]

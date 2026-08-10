@@ -64,7 +64,6 @@ if __name__ == '__main__':
             )
             # lst_embeddings.append(embeddings)
 
-        import glob
         input_paths = glob.glob(f"embedding_data/{dataset_name}/{dataset_type}_dense[0-9]*.npy")
         input_paths = sorted(input_paths, key=lambda path: int(path.split("_dense")[1].rstrip(".npy")))
         lst_embeddings = []
@@ -88,12 +87,6 @@ if __name__ == '__main__':
         for path in input_paths:
             if path.startswith(f"embedding_data/{dataset_name}/{dataset_type}_dense") or not path.endswith(".npy"):
                 os.remove(path)
-
-        # with open(f"embedding_data/{dataset_name}/{dataset_type}_sparse.pkl", "wb") as f:
-        #     pickle.dump(all_embeddings["lexical_weights"], f)
-
-        # with open(f"embedding_data/{dataset_name}/multi_vec.pkl", "wb") as f:
-        #     pickle.dump(query_embeddings["colbert_vecs"], f)
 
         # save corresponding context array indices
         df_dataset.to_json(file_path, lines=True, orient="records")
