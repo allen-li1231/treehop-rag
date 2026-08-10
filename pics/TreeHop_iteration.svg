@@ -1,0 +1,199 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="453pt" height="300pt" viewBox="0 0 453 300">
+<defs>
+  <marker id="aIndigo" viewBox="0 0 4.5 4.5" refX="2.25" refY="2.25" markerWidth="4.5" markerHeight="4.5" markerUnits="userSpaceOnUse" orient="auto"><path d="M0,0.62 L4.5,2.25 L0,3.88 Z" fill="#4A5AA8"/></marker>
+  <marker id="aGrey" viewBox="0 0 4.5 4.5" refX="2.25" refY="2.25" markerWidth="4.5" markerHeight="4.5" markerUnits="userSpaceOnUse" orient="auto"><path d="M0,0.62 L4.5,2.25 L0,3.88 Z" fill="#8A929B"/></marker>
+  <marker id="aTeal" viewBox="0 0 4.5 4.5" refX="2.25" refY="2.25" markerWidth="4.5" markerHeight="4.5" markerUnits="userSpaceOnUse" orient="auto"><path d="M0,0.62 L4.5,2.25 L0,3.88 Z" fill="#2E7D8F"/></marker>
+  <marker id="aGreen" viewBox="0 0 4.5 4.5" refX="2.25" refY="2.25" markerWidth="4.5" markerHeight="4.5" markerUnits="userSpaceOnUse" orient="auto"><path d="M0,0.62 L4.5,2.25 L0,3.88 Z" fill="#3C7A4E"/></marker>
+</defs>
+<style>
+  .sans  { font-family: "Nimbus Sans","Helvetica","Arial",sans-serif; }
+  .serif { font-family: "Nimbus Roman","Times New Roman","Times",serif; }
+  .ptitle { font-size: 8.4px; font-weight: bold; fill: #1B1F24; }
+  .colhead { font-size: 6.6px; font-weight: bold; fill: #8A929B; letter-spacing: 0.6px; }
+</style>
+<text class="sans ptitle" x="6" y="10">(a)<tspan dx="5" font-weight="bold">One hop of the iterative retrieval loop</tspan></text>
+<rect x="6" y="26" width="52.859" height="18" rx="3" fill="#FFFFFF" stroke="#8A929B" stroke-width="0.9"/>
+<path d="M19.76,30.50 h4.8 l2.4,2.4 V39.50 H19.76 Z" fill="#FFFFFF" stroke="#4A5AA8" stroke-width="0.8" stroke-linejoin="round"/><path d="M24.56,30.50 v2.4 h2.4" fill="none" stroke="#4A5AA8" stroke-width="0.8" stroke-linejoin="round"/><path d="M21.26,34.80 h4.2 M21.26,36.50 h4.2 M21.26,38.20 h2.6" stroke="#9AA3CE" stroke-width="0.7"/>
+<text class="sans" font-size="5.9" fill="#39468A" x="30.32" y="37.15">query</text>
+<line x1="32.43" y1="44.00" x2="32.43" y2="51.00" stroke="#8A929B" stroke-width="1.1"/>
+<path d="M32.43,46.50 L32.43,47.50 L32.43,48.50" fill="none" stroke="none" marker-mid="url(#aGrey)"/>
+<rect x="6" y="52" width="52.859" height="18" rx="3" fill="#FFFFFF" stroke="#8A929B" stroke-width="0.9"/>
+<path d="M13.00,55.00 L26.00,57.10 L26.00,64.90 L13.00,67.00 Z" fill="#E4E7EB" stroke="#4A5058" stroke-width="0.9" stroke-linejoin="round"/>
+<text class="sans" font-size="5.8" fill="#2A2F36" font-weight="bold" x="29.38" y="63.11">encoder</text>
+<line x1="32.43" y1="70.00" x2="32.43" y2="77.00" stroke="#8A929B" stroke-width="1.1"/>
+<path d="M32.43,72.50 L32.43,73.50 L32.43,74.50" fill="none" stroke="none" marker-mid="url(#aGrey)"/>
+<rect x="6" y="78" width="52.859" height="18" rx="3" fill="#FFFFFF" stroke="#8A929B" stroke-width="0.9"/>
+<rect x="15.21" y="83.75" width="3.4" height="6.5" fill="#8B96C9"/><rect x="19.51" y="83.75" width="3.4" height="6.5" fill="#B4BCDD"/><rect x="23.81" y="83.75" width="3.4" height="6.5" fill="#7581BF"/><rect x="28.11" y="83.75" width="3.4" height="6.5" fill="#A7B0D6"/>
+<text class="sans" font-size="5.9" fill="#39468A" x="34.87" y="89.15">query</text>
+<rect x="65.859" y="22" width="381.141" height="36" rx="4" fill="#F4F5F7"/>
+<rect x="65.859" y="74" width="381.141" height="36" rx="4" fill="#F1F7F3"/>
+<text class="sans" font-size="6.4" fill="#5D646C" font-weight="bold" x="65.60" y="19.00">Conventional RAG</text>
+<text class="sans" font-size="6.2" fill="#9B3A2F" font-style="italic" x="328.61" y="19.00">one LLM call + one encoder pass per hop</text>
+<text class="sans" font-size="6.4" fill="#2E6440" font-weight="bold" x="65.80" y="71.00">TreeHop (ours)</text>
+<text class="sans" font-size="6.2" fill="#2E6440" font-style="italic" x="341.53" y="71.00">one lightweight forward pass per hop</text>
+<path d="M58.86,87.00 H62.86 V37 H70.86" fill="none" stroke="#8A929B" stroke-width="1.1"/>
+<path d="M62.86,63.00 L62.86,62.00 L62.86,61.00" fill="none" stroke="none" marker-mid="url(#aGrey)"/>
+<path d="M58.86,87.00 H62.86 V89 H70.86" fill="none" stroke="#2E7D8F" stroke-width="1.1"/>
+<path d="M65.86,89.00 L66.86,89.00 L67.86,89.00" fill="none" stroke="none" marker-mid="url(#aTeal)"/>
+<rect x="71.859" y="28" width="46.713" height="18" rx="3" fill="#FFFFFF" stroke="#8A929B" stroke-width="0.9"/>
+<ellipse cx="83.36" cy="32.70" rx="4.5" ry="1.8" fill="#FFFFFF" stroke="#4A5058" stroke-width="0.8"/><path d="M78.86,32.70 V41.30 A4.5,1.8 0 0 0 87.86,41.30 V32.70" fill="none" stroke="#4A5058" stroke-width="0.8"/>
+<text class="sans" font-size="5.8" fill="#2A2F36" font-weight="bold" x="91.01" y="39.11">retrieve</text>
+<rect x="124.606" y="28" width="77.108" height="18" rx="3" fill="#FFFFFF" stroke="#8A929B" stroke-width="0.9"/>
+<path d="M131.61,32.50 h4.8 l2.4,2.4 V41.50 H131.61 Z" fill="#FFFFFF" stroke="#4A5AA8" stroke-width="0.8" stroke-linejoin="round"/><path d="M136.41,32.50 v2.4 h2.4" fill="none" stroke="#4A5AA8" stroke-width="0.8" stroke-linejoin="round"/><path d="M133.11,36.80 h4.2 M133.11,38.50 h4.2 M133.11,40.20 h2.6" stroke="#9AA3CE" stroke-width="0.7"/>
+<text class="sans" font-size="5.9" fill="#39468A" x="142.16" y="39.15">query</text>
+
+<path d="M168.44,32.50 h4.8 l2.4,2.4 V41.50 H168.44 Z" fill="#FFFFFF" stroke="#2E7D8F" stroke-width="0.8" stroke-linejoin="round"/><path d="M173.24,32.50 v2.4 h2.4" fill="none" stroke="#2E7D8F" stroke-width="0.8" stroke-linejoin="round"/><path d="M169.94,36.80 h4.2 M169.94,38.50 h4.2 M169.94,40.20 h2.6" stroke="#8CBAC3" stroke-width="0.7"/>
+<text class="sans" font-size="5.9" fill="#25697A" x="178.96" y="39.15">chunk</text>
+<rect x="207.747" y="28" width="49.28" height="18" rx="3" fill="#FBEFED" stroke="#B4483C" stroke-width="1.0"/>
+<text class="sans" font-size="6" fill="#9B3A2F" font-weight="bold" x="214.27" y="39.19">LLM rewriter</text>
+<rect x="263.061" y="28" width="51.4565" height="18" rx="3" fill="#FFFFFF" stroke="#8A929B" stroke-width="0.9"/>
+<path d="M270.06,32.50 h4.8 l2.4,2.4 V41.50 H270.06 Z" fill="#FFFFFF" stroke="#4A5AA8" stroke-width="0.8" stroke-linejoin="round"/><path d="M274.86,32.50 v2.4 h2.4" fill="none" stroke="#4A5AA8" stroke-width="0.8" stroke-linejoin="round"/><path d="M271.56,36.80 h4.2 M271.56,38.50 h4.2 M271.56,40.20 h2.6" stroke="#9AA3CE" stroke-width="0.7"/>
+<text class="sans" font-size="5.9" fill="#39468A" x="280.35" y="39.15">new query</text>
+<rect x="320.551" y="28" width="52.859" height="18" rx="3" fill="#FFFFFF" stroke="#8A929B" stroke-width="0.9"/>
+<path d="M327.55,31.00 L340.55,33.10 L340.55,40.90 L327.55,43.00 Z" fill="#E4E7EB" stroke="#4A5058" stroke-width="0.9" stroke-linejoin="round"/>
+<text class="sans" font-size="5.8" fill="#2A2F36" font-weight="bold" x="343.93" y="39.11">encoder</text>
+<rect x="379.443" y="28" width="60.5565" height="18" rx="3" fill="#EEF0FA" stroke="#4A5AA8" stroke-width="0.9"/>
+<rect x="386.44" y="33.75" width="3.4" height="6.5" fill="#8B96C9"/><rect x="390.74" y="33.75" width="3.4" height="6.5" fill="#B4BCDD"/><rect x="395.04" y="33.75" width="3.4" height="6.5" fill="#7581BF"/><rect x="399.34" y="33.75" width="3.4" height="6.5" fill="#A7B0D6"/>
+<text class="sans" font-size="5.9" fill="#39468A" x="405.83" y="39.15">new query</text>
+<line x1="118.57" y1="37.00" x2="123.61" y2="37.00" stroke="#8A929B" stroke-width="1.1"/>
+<path d="M120.09,37.00 L121.09,37.00 L122.09,37.00" fill="none" stroke="none" marker-mid="url(#aGrey)"/>
+<line x1="201.71" y1="37.00" x2="206.75" y2="37.00" stroke="#8A929B" stroke-width="1.1"/>
+<path d="M203.23,37.00 L204.23,37.00 L205.23,37.00" fill="none" stroke="none" marker-mid="url(#aGrey)"/>
+<line x1="257.03" y1="37.00" x2="262.06" y2="37.00" stroke="#8A929B" stroke-width="1.1"/>
+<path d="M258.54,37.00 L259.54,37.00 L260.54,37.00" fill="none" stroke="none" marker-mid="url(#aGrey)"/>
+<line x1="314.52" y1="37.00" x2="319.55" y2="37.00" stroke="#8A929B" stroke-width="1.1"/>
+<path d="M316.03,37.00 L317.03,37.00 L318.03,37.00" fill="none" stroke="none" marker-mid="url(#aGrey)"/>
+<line x1="373.41" y1="37.00" x2="378.44" y2="37.00" stroke="#8A929B" stroke-width="1.1"/>
+<path d="M374.93,37.00 L375.93,37.00 L376.93,37.00" fill="none" stroke="none" marker-mid="url(#aGrey)"/>
+<path d="M440.00,37 H444.00 V54 H85.36 V47" fill="none" stroke="#8A929B" stroke-width="1" stroke-dasharray="3 2.2"/>
+<path d="M265.68,54.00 L264.68,54.00 L263.68,54.00" fill="none" stroke="none" marker-mid="url(#aGrey)"/>
+<text class="sans" font-size="5.8" fill="#7A828C" font-style="italic" x="249.59" y="52.00">next hop</text>
+<rect x="71.859" y="80" width="46.713" height="18" rx="3" fill="#FFFFFF" stroke="#8A929B" stroke-width="0.9"/>
+<ellipse cx="83.36" cy="84.70" rx="4.5" ry="1.8" fill="#FFFFFF" stroke="#4A5058" stroke-width="0.8"/><path d="M78.86,84.70 V93.30 A4.5,1.8 0 0 0 87.86,93.30 V84.70" fill="none" stroke="#4A5058" stroke-width="0.8"/>
+<text class="sans" font-size="5.8" fill="#2A2F36" font-weight="bold" x="91.01" y="91.11">retrieve</text>
+<rect x="125.427" y="80" width="95.308" height="18" rx="3" fill="#FFFFFF" stroke="#8A929B" stroke-width="0.9"/>
+<rect x="132.43" y="85.75" width="3.4" height="6.5" fill="#8B96C9"/><rect x="136.73" y="85.75" width="3.4" height="6.5" fill="#B4BCDD"/><rect x="141.03" y="85.75" width="3.4" height="6.5" fill="#7581BF"/><rect x="145.33" y="85.75" width="3.4" height="6.5" fill="#A7B0D6"/>
+<text class="sans" font-size="5.9" fill="#39468A" x="152.08" y="91.15">query</text>
+
+<rect x="178.36" y="85.75" width="3.4" height="6.5" fill="#5E9BAA"/><rect x="182.66" y="85.75" width="3.4" height="6.5" fill="#A8CDD5"/><rect x="186.96" y="85.75" width="3.4" height="6.5" fill="#7FB3BF"/><rect x="191.26" y="85.75" width="3.4" height="6.5" fill="#93C0CA"/>
+<text class="sans" font-size="5.9" fill="#25697A" x="197.98" y="91.15">chunk</text>
+<rect x="227.589" y="80" width="85" height="18" rx="3.5" fill="#E8F1E9" stroke="#3C7A4E" stroke-width="1.2"/>
+<text class="sans" font-size="8.4" fill="#2E6440" font-weight="bold" x="253.46" y="92.06">TreeHop</text>
+<rect x="319.444" y="80" width="60.5565" height="18" rx="3" fill="#EEF0FA" stroke="#4A5AA8" stroke-width="0.9"/>
+<rect x="326.44" y="85.75" width="3.4" height="6.5" fill="#8B96C9"/><rect x="330.74" y="85.75" width="3.4" height="6.5" fill="#B4BCDD"/><rect x="335.04" y="85.75" width="3.4" height="6.5" fill="#7581BF"/><rect x="339.34" y="85.75" width="3.4" height="6.5" fill="#A7B0D6"/>
+<text class="sans" font-size="5.9" fill="#39468A" x="345.83" y="91.15">new query</text>
+<line x1="118.57" y1="89.00" x2="124.43" y2="89.00" stroke="#2E7D8F" stroke-width="1.1"/>
+<path d="M120.50,89.00 L121.50,89.00 L122.50,89.00" fill="none" stroke="none" marker-mid="url(#aTeal)"/>
+<line x1="220.73" y1="89.00" x2="226.59" y2="89.00" stroke="#2E7D8F" stroke-width="1.1"/>
+<path d="M222.66,89.00 L223.66,89.00 L224.66,89.00" fill="none" stroke="none" marker-mid="url(#aTeal)"/>
+<line x1="312.59" y1="89.00" x2="318.44" y2="89.00" stroke="#2E7D8F" stroke-width="1.1"/>
+<path d="M314.51,89.00 L315.51,89.00 L316.51,89.00" fill="none" stroke="none" marker-mid="url(#aTeal)"/>
+<path d="M380.00,89 H384.00 V108 H85.36 V99" fill="none" stroke="#3C7A4E" stroke-width="1" stroke-dasharray="3 2.2"/>
+<path d="M235.68,108.00 L234.68,108.00 L233.68,108.00" fill="none" stroke="none" marker-mid="url(#aGreen)"/>
+<text class="sans" font-size="5.8" fill="#5C8A6A" font-style="italic" x="224.59" y="106.00">next hop</text>
+<line x1="4" y1="120" x2="449" y2="120" stroke="#E2E5EA" stroke-width="0.8"/>
+<rect x="2.00" y="135" width="81.96" height="160" rx="5" fill="#5D646C" fill-opacity="0.03" stroke="#A0A8B0" stroke-width="0.9" stroke-dasharray="0.1 2.6" stroke-linecap="round"/>
+<rect x="89.96" y="135" width="148.33" height="160" rx="5" fill="#5D646C" fill-opacity="0.055" stroke="#A0A8B0" stroke-width="0.9" stroke-dasharray="0.1 2.6" stroke-linecap="round"/>
+<rect x="244.29" y="135" width="206.71" height="160" rx="5" fill="#5D646C" fill-opacity="0.08" stroke="#A0A8B0" stroke-width="0.9" stroke-dasharray="0.1 2.6" stroke-linecap="round"/>
+<text class="sans ptitle" x="6" y="132">(b)<tspan dx="5" font-weight="bold">Retrieval tree across hops, pruned back to the top 2 candidates at every layer</tspan></text>
+<rect x="6" y="158.56" width="68.96" height="34.44" rx="3.5" fill="#FFFFFF" stroke="#4A5AA8" stroke-width="0.9"/>
+<text class="serif" font-size="6" fill="#1B1F24" font-style="italic" x="12.58" y="169.53">Who is the grandfather</text>
+<text class="serif" font-size="6" fill="#1B1F24" font-style="italic" x="18.33" y="176.50">of Donald Trump?</text>
+<rect x="23.26" y="179.50" width="3.4" height="6.5" fill="#8B96C9"/><rect x="27.56" y="179.50" width="3.4" height="6.5" fill="#B4BCDD"/><rect x="31.86" y="179.50" width="3.4" height="6.5" fill="#7581BF"/><rect x="36.16" y="179.50" width="3.4" height="6.5" fill="#A7B0D6"/>
+<text class="sans" font-size="5.9" fill="#39468A" x="42.92" y="184.90">query</text>
+<line x1="40.48" y1="193.00" x2="40.48" y2="201.00" stroke="#4A5AA8" stroke-width="1.1"/>
+<path d="M40.48,196.00 L40.48,197.00 L40.48,198.00" fill="none" stroke="none" marker-mid="url(#aIndigo)"/>
+<rect x="17.1235" y="202" width="46.713" height="18" rx="3" fill="#FFFFFF" stroke="#8A929B" stroke-width="0.9"/>
+<ellipse cx="28.62" cy="206.70" rx="4.5" ry="1.8" fill="#FFFFFF" stroke="#4A5058" stroke-width="0.8"/><path d="M24.12,206.70 V215.30 A4.5,1.8 0 0 0 33.12,215.30 V206.70" fill="none" stroke="#4A5058" stroke-width="0.8"/>
+<text class="sans" font-size="5.8" fill="#2A2F36" font-weight="bold" x="36.28" y="213.11">retrieve</text>
+<path d="M63.84,206.50 L95.96,178.50" fill="none" stroke="#2E7D8F" stroke-width="1.1"/>
+<path d="M79.15,193.16 L79.90,192.50 L80.65,191.84" fill="none" stroke="none" marker-mid="url(#aTeal)"/>
+<path d="M63.84,215.50 L95.96,243.50" fill="none" stroke="#2E7D8F" stroke-width="1.1"/>
+<path d="M79.15,228.84 L79.90,229.50 L80.65,230.16" fill="none" stroke="none" marker-mid="url(#aTeal)"/>
+<rect x="98.96" y="156.81" width="75.23" height="43.37" rx="3.5" fill="#FFFFFF" stroke="#2E7D8F" stroke-width="0.9"/>
+<text class="serif" font-size="6" fill="#2A2F36" font-style="italic" x="106.02" y="165.78">Donald John Trump is an</text>
+<text class="serif" font-size="6" fill="#2A2F36" font-style="italic" x="106.29" y="175.09">American politician and</text>
+<text class="serif" font-size="6" fill="#2A2F36" font-style="italic" x="105.75" y="184.38">the 47th U.S. president.</text>
+<rect x="117.04" y="188.69" width="3.4" height="6.5" fill="#5E9BAA"/><rect x="121.34" y="188.69" width="3.4" height="6.5" fill="#A8CDD5"/><rect x="125.64" y="188.69" width="3.4" height="6.5" fill="#7FB3BF"/><rect x="129.94" y="188.69" width="3.4" height="6.5" fill="#93C0CA"/>
+<text class="sans" font-size="5.9" fill="#25697A" x="136.67" y="194.09">chunk 1</text>
+<rect x="98.96" y="221.81" width="75.23" height="43.37" rx="3.5" fill="#FFFFFF" stroke="#2E7D8F" stroke-width="0.9"/>
+<text class="serif" font-size="6" fill="#2A2F36" font-style="italic" x="106.02" y="230.78">Donald Trump was born</text>
+<text class="serif" font-size="6" fill="#2A2F36" font-style="italic" x="105.69" y="240.09">in 1946, the fourth child</text>
+<text class="serif" font-size="6" fill="#2A2F36" font-style="italic" x="105.81" y="249.38">of <tspan font-weight="bold" fill="#1B1F24">Fred Trump</tspan>.</text>
+<rect x="117.04" y="253.69" width="3.4" height="6.5" fill="#5E9BAA"/><rect x="121.34" y="253.69" width="3.4" height="6.5" fill="#A8CDD5"/><rect x="125.64" y="253.69" width="3.4" height="6.5" fill="#7FB3BF"/><rect x="129.94" y="253.69" width="3.4" height="6.5" fill="#93C0CA"/>
+<text class="sans" font-size="5.9" fill="#25697A" x="136.67" y="259.09">chunk 2</text>
+<path d="M74.96,195 H79.96 V211.00 H123.96" fill="none" stroke="#4A5AA8" stroke-width="1"/>
+<rect x="123.96" y="203" width="69.0615" height="16" rx="3" fill="#EEF0FA" stroke="#4A5AA8" stroke-width="0.9"/>
+<rect x="129.46" y="207.75" width="3.4" height="6.5" fill="#8B96C9"/><rect x="133.76" y="207.75" width="3.4" height="6.5" fill="#B4BCDD"/><rect x="138.06" y="207.75" width="3.4" height="6.5" fill="#7581BF"/><rect x="142.36" y="207.75" width="3.4" height="6.5" fill="#A7B0D6"/>
+<text class="sans" font-size="5.9" fill="#39468A" x="148.97" y="213.15">previous query</text>
+<path d="M193.02,211.00 H209.74 V190.00" fill="none" stroke="#4A5AA8" stroke-width="1"/>
+<path d="M209.74,201.50 L209.74,200.50 L209.74,199.50" fill="none" stroke="none" marker-mid="url(#aIndigo)"/>
+<path d="M193.02,211.00 H209.74 V232.00" fill="none" stroke="#4A5AA8" stroke-width="1"/>
+<path d="M209.74,220.50 L209.74,221.50 L209.74,222.50" fill="none" stroke="none" marker-mid="url(#aIndigo)"/>
+<line x1="174.19" y1="178.50" x2="185.19" y2="178.50" stroke="#2E7D8F" stroke-width="1.1"/>
+<path d="M178.69,178.50 L179.69,178.50 L180.69,178.50" fill="none" stroke="none" marker-mid="url(#aTeal)"/>
+<rect x="186.19" y="169.50" width="47.10" height="18" rx="3" fill="#E8F1E9" stroke="#3C7A4E" stroke-width="1.2"/>
+<text class="sans" font-size="8.4" fill="#2E6440" font-weight="bold" x="193.11" y="181.56">TreeHop</text>
+<path d="M233.29,178.50 H241.29 V166.50 H248.29" fill="none" stroke="#3C7A4E" stroke-width="1.1"/>
+<path d="M241.29,173.50 L241.29,172.50 L241.29,171.50" fill="none" stroke="none" marker-mid="url(#aGreen)"/>
+<rect x="249.286" y="157.5" width="60.3915" height="18" rx="3" fill="#EEF0FA" stroke="#4A5AA8" stroke-width="0.9"/>
+<rect x="254.29" y="163.25" width="3.4" height="6.5" fill="#8B96C9"/><rect x="258.59" y="163.25" width="3.4" height="6.5" fill="#B4BCDD"/><rect x="262.89" y="163.25" width="3.4" height="6.5" fill="#7581BF"/><rect x="267.19" y="163.25" width="3.4" height="6.5" fill="#A7B0D6"/>
+<text class="sans" font-size="5.9" fill="#39468A" x="273.67" y="168.65">new query 1</text>
+<line x1="279.48" y1="175.50" x2="279.48" y2="180.50" stroke="#4A5AA8" stroke-width="1.1"/>
+<path d="M279.48,177.00 L279.48,178.00 L279.48,179.00" fill="none" stroke="none" marker-mid="url(#aIndigo)"/>
+<rect x="256.125" y="181.5" width="46.713" height="18" rx="3" fill="#FFFFFF" stroke="#8A929B" stroke-width="0.9"/>
+<ellipse cx="267.63" cy="186.20" rx="4.5" ry="1.8" fill="#FFFFFF" stroke="#4A5058" stroke-width="0.8"/><path d="M263.13,186.20 V194.80 A4.5,1.8 0 0 0 272.13,194.80 V186.20" fill="none" stroke="#4A5058" stroke-width="0.8"/>
+<text class="sans" font-size="5.8" fill="#2A2F36" font-weight="bold" x="275.28" y="192.61">retrieve</text>
+<line x1="302.84" y1="190.50" x2="320.68" y2="190.50" stroke="#2E7D8F" stroke-width="1.1"/>
+<path d="M310.76,190.50 L311.76,190.50 L312.76,190.50" fill="none" stroke="none" marker-mid="url(#aTeal)"/>
+<line x1="174.19" y1="243.50" x2="185.19" y2="243.50" stroke="#2E7D8F" stroke-width="1.1"/>
+<path d="M178.69,243.50 L179.69,243.50 L180.69,243.50" fill="none" stroke="none" marker-mid="url(#aTeal)"/>
+<rect x="186.19" y="234.50" width="47.10" height="18" rx="3" fill="#E8F1E9" stroke="#3C7A4E" stroke-width="1.2"/>
+<text class="sans" font-size="8.4" fill="#2E6440" font-weight="bold" x="193.11" y="246.56">TreeHop</text>
+<path d="M233.29,243.50 H241.29 V231.50 H248.29" fill="none" stroke="#3C7A4E" stroke-width="1.1"/>
+<path d="M241.29,238.50 L241.29,237.50 L241.29,236.50" fill="none" stroke="none" marker-mid="url(#aGreen)"/>
+<rect x="249.286" y="222.5" width="60.3915" height="18" rx="3" fill="#EEF0FA" stroke="#4A5AA8" stroke-width="0.9"/>
+<rect x="254.29" y="228.25" width="3.4" height="6.5" fill="#8B96C9"/><rect x="258.59" y="228.25" width="3.4" height="6.5" fill="#B4BCDD"/><rect x="262.89" y="228.25" width="3.4" height="6.5" fill="#7581BF"/><rect x="267.19" y="228.25" width="3.4" height="6.5" fill="#A7B0D6"/>
+<text class="sans" font-size="5.9" fill="#39468A" x="273.67" y="233.65">new query 2</text>
+<line x1="279.48" y1="240.50" x2="279.48" y2="245.50" stroke="#4A5AA8" stroke-width="1.1"/>
+<path d="M279.48,242.00 L279.48,243.00 L279.48,244.00" fill="none" stroke="none" marker-mid="url(#aIndigo)"/>
+<rect x="256.125" y="246.5" width="46.713" height="18" rx="3" fill="#FFFFFF" stroke="#8A929B" stroke-width="0.9"/>
+<ellipse cx="267.63" cy="251.20" rx="4.5" ry="1.8" fill="#FFFFFF" stroke="#4A5058" stroke-width="0.8"/><path d="M263.13,251.20 V259.80 A4.5,1.8 0 0 0 272.13,259.80 V251.20" fill="none" stroke="#4A5058" stroke-width="0.8"/>
+<text class="sans" font-size="5.8" fill="#2A2F36" font-weight="bold" x="275.28" y="257.61">retrieve</text>
+<line x1="302.84" y1="255.50" x2="320.68" y2="255.50" stroke="#2E7D8F" stroke-width="1.1"/>
+<path d="M310.76,255.50 L311.76,255.50 L312.76,255.50" fill="none" stroke="none" marker-mid="url(#aTeal)"/>
+<rect x="321.68" y="151" width="125.32" height="55" rx="3.5" fill="#FFFFFF" stroke="#D8DCE1" stroke-width="0.8"/>
+<text class="sans" font-size="5.9" fill="#5D646C" x="340.62" y="161.30">top 2 retrieved for new query 1</text>
+<circle cx="332.18" cy="168.66" r="4.5" fill="#FFFFFF" stroke="#C0392B" stroke-width="1"/>
+<line x1="329.08" y1="171.76" x2="335.28" y2="165.56" stroke="#C0392B" stroke-width="1.2" stroke-linecap="round"/>
+<text class="sans" font-size="5.9" fill="#9AA1A9" x="340.50" y="170.81">chunk 1</text>
+<text class="sans" font-size="5.8" fill="#7A828C" font-style="italic" x="376.91" y="170.81">already retrieved</text>
+<text class="sans" font-size="5.9" fill="#9AA1A9" x="429.76" y="170.81">0.78</text>
+<text class="serif" font-size="5.6" fill="#9AA1A9" font-style="italic" x="340.73" y="179.81">Donald Trump is an American politician.</text>
+<circle cx="332.18" cy="187.20" r="4.5" fill="#FFFFFF" stroke="#C0392B" stroke-width="1"/>
+<path d="M330.18,185.20 L334.18,189.20 M334.18,185.20 L330.18,189.20" stroke="#C0392B" stroke-width="1.2" stroke-linecap="round"/>
+<text class="sans" font-size="5.9" fill="#9AA1A9" x="340.50" y="189.35">chunk 4</text>
+<text class="sans" font-size="5.8" fill="#7A828C" font-style="italic" x="380.44" y="189.35">below the top 2</text>
+<text class="sans" font-size="5.9" fill="#9AA1A9" x="429.76" y="189.35">0.29</text>
+<text class="serif" font-size="5.6" fill="#9AA1A9" font-style="italic" x="340.37" y="198.35">Trump Tower is a skyscraper in NYC.</text>
+<rect x="321.68" y="216" width="125.32" height="55" rx="3.5" fill="#FFFFFF" stroke="#D8DCE1" stroke-width="0.8"/>
+<text class="sans" font-size="5.9" fill="#5D646C" x="340.62" y="226.30">top 2 retrieved for new query 2</text>
+<circle cx="332.18" cy="233.66" r="4.5" fill="#FFFFFF" stroke="#3C7A4E" stroke-width="1"/>
+<path d="M329.78,233.66 L331.78,236.06 L334.78,231.26" fill="none" stroke="#3C7A4E" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"/>
+<text class="sans" font-size="5.9" fill="#2E7D8F" x="340.50" y="235.81">chunk 3</text>
+<text class="sans" font-size="5.8" fill="#7A828C" font-style="italic" x="408.63" y="235.81">kept</text>
+<text class="sans" font-size="5.9" fill="#2A2F36" x="429.76" y="235.81">0.71</text>
+<text class="serif" font-size="5.6" fill="#2A2F36" font-style="italic" x="340.65" y="244.81">Fred Trump's father was <tspan font-weight="bold" fill="#1B1F24">Friedrich Trump</tspan>.</text>
+<circle cx="332.18" cy="252.20" r="4.5" fill="#FFFFFF" stroke="#3C7A4E" stroke-width="1"/>
+<path d="M329.78,252.20 L331.78,254.60 L334.78,249.80" fill="none" stroke="#3C7A4E" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"/>
+<text class="sans" font-size="5.9" fill="#2E7D8F" x="340.50" y="254.35">chunk 5</text>
+<text class="sans" font-size="5.8" fill="#7A828C" font-style="italic" x="408.63" y="254.35">kept</text>
+<text class="sans" font-size="5.9" fill="#2A2F36" x="429.76" y="254.35">0.63</text>
+<text class="serif" font-size="5.6" fill="#2A2F36" font-style="italic" x="340.65" y="263.35">Friedrich Trump emigrated from Germany.</text>
+<rect x="321.68" y="276" width="125.32" height="16" rx="3.5" fill="#E8F1E9" stroke="#3C7A4E" stroke-width="1.1"/>
+<text class="sans" font-size="6.8" fill="#2E6440" font-weight="bold" x="347.20" y="286.20">answer: </text>
+<text class="serif" font-size="6.8" fill="#2E6440" font-weight="bold" font-style="italic" x="374.36" y="286.20">Friedrich Trump</text>
+<text class="sans" x="40.5" y="146" text-anchor="middle" font-size="6.4" font-weight="bold" fill="#5D646C">QUERY</text>
+<text class="sans" x="166.1" y="146" text-anchor="middle" font-size="6.4" font-weight="bold" fill="#5D646C">HOP 1<tspan font-weight="normal" font-style="italic" font-size="6.2" fill="#7A828C" dx="3">&#183; keep top 2</tspan></text>
+<text class="sans" x="348.1" y="146" text-anchor="middle" font-size="6.4" font-weight="bold" fill="#5D646C">HOP 2<tspan font-weight="normal" font-style="italic" font-size="6.2" fill="#7A828C" dx="3">&#183; keep top 2</tspan></text>
+</svg>

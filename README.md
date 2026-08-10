@@ -1,4 +1,4 @@
-# TreeHop: Generate and Filter Next Query Embeddings Efficiently for Multi-hop Question Answering
+# TreeHop: Efficient Embedding-Level Query Rewriter
 
 
 [![arXiv](https://img.shields.io/badge/arXiv-2504.20114-b31b1b.svg?style=flat)](https://arxiv.org/abs/2504.20114)
@@ -8,23 +8,25 @@
 
 
 ## Table of Contents
-- [Introduction](#introduction)
-- [Why TreeHop for Multi-hop Retrieval?](#why-treehop-for-multi-hop-retrieval)
-- [System Requirement](#system-requirement)
-  - [Python Environment](#python-environment)
-- [Preliminaries](#preliminaries)
-  - [Embedding Databases](#embedding-databases)
-- [Multi-hop Retrieval with TreeHop: How-to-Use](#multi-hop-retrieval-with-treehop-how-to-use)
-- [Paper Reproduction](#paper-reproduction)
-- [Training TreeHop](#training-treehop)
-- [Citation](#citation)
+- [TreeHop: Efficient Embedding-Level Query Rewriter](#treehop-efficient-embedding-level-query-rewriter)
+  - [Table of Contents](#table-of-contents)
+  - [Introduction](#introduction)
+  - [Why TreeHop for Multi-hop Retrieval?](#why-treehop-for-multi-hop-retrieval)
+  - [System Requirement](#system-requirement)
+    - [Python Environment](#python-environment)
+  - [Preliminaries](#preliminaries)
+    - [Embedding Databases](#embedding-databases)
+  - [Multi-hop Retrieval with TreeHop: How-to-Use](#multi-hop-retrieval-with-treehop-how-to-use)
+  - [Paper Reproduction](#paper-reproduction)
+  - [Training TreeHop](#training-treehop)
+  - [Citation](#citation)
 
 
 
 ## Introduction
 TreeHop is a lightweight, embedding-level framework designed to address the computational inefficiencies of traditional recursive retrieval paradigm in the realm of Retrieval-Augmented Generation (RAG). By eliminating the need for iterative LLM-based query rewriting, TreeHop significantly reduces latency while maintaining state-of-the-art performance. It achieves this through dynamic query embedding updates and pruning strategies, enabling a streamlined "Retrieve-Embed-Retrieve" workflow. 
 
-![Simplified Iteration Enabled by TreeHop in RAG system](pics/TreeHop_iteration.png)
+![Simplified Iteration Enabled by TreeHop in RAG system](pics/TreeHop_iteration.svg)
 
 ## Why TreeHop for Multi-hop Retrieval?
 - **Handle Complex Queries**: Real-world questions often require multiple hops to retrieve relevant information, which traditional retrieval methods struggle with.
@@ -32,7 +34,7 @@ TreeHop is a lightweight, embedding-level framework designed to address the comp
 - **Speed**: 92.8%-97.8% lower retrieval latency than iterative LLM approaches, ideal for industrial applications where response speed is crucial.
 - **Performant**: Maintains high recall with controlled number of retrieved passages, ensuring relevance without overwhelming the system.
 
-![Main Experiment](pics/main_experiment.png)
+![Main Experiment](pics/main_experiment.svg)
 
 
 ## System Requirement
