@@ -1,5 +1,6 @@
 # Copyright (c) Facebook, Inc. and its affiliates. All Rights Reserved
 
+import gc
 import os
 import sys
 import logging
@@ -214,3 +215,12 @@ def init_tb_logger(output_dir):
         tb_logger = None
 
     return tb_logger
+
+
+def clear_cache(device: str | torch.device = DEVICE):
+    gc.collect()
+    if isinstance(device, str) and device != "cpu":
+        getattr(torch, device).empty_cache()
+    elif isinstance(device, torch.device) and device.type != "cpu":
+        getattr(torch, device.type).empty_cache()
+
