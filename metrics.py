@@ -1,40 +1,15 @@
 import re
-import dgl
 import numpy as np
 import torch
 import torch.nn.functional as F
 
 from utils import NodeType
+from tree_hop.model import graph_cosine_similiarity
 from src.evaluation import normalize_answer
 
 regex_answer_key = re.compile(r"is[^\w]+([A-E])[^\w]+", re.DOTALL)
 
 
-def graph_cosine_similiarity(graph: dgl.DGLGraph, normalize=True):
-    node_out, node_in = graph.edges()
-    queries = graph.ndata["h"][node_out]
-    if normalize:
-        queries = F.normalize(queries, dim=-1)
-
-    ctxs = graph.ndata["rep"][node_in]
-    graph.edata["sim"] = F.cosine_similarity(queries, ctxs)
-    return graph.edata["sim"]
-
-
-def entropy(p, dim=-1, eps=1e-6):
-    if not isinstance(p, (torch.Tensor, np.ndarray)):
-        ent = 0.
-        for prob in p:
-            ent -= prob * np.log(prob + eps)
-
-        return ent / len(p)
-
-    ent = p * (p + eps).log()
-    ent = -ent.sum(dim=dim)
-    return ent / p.shape[dim]
-
-
-#TODO: check this
 def gather_graph_similarity_score(g, normalize=True):
     sim = graph_cosine_similiarity(g, normalize=normalize)
     positives = torch.where(g.ndata["y"] >= NodeType.relevant_doc.value)[0].int()
@@ -109,4 +84,8 @@ def calc_acc(data, context: str):
     elif "answer" in data:
         context = normalize_answer(context)
         answer = normalize_answer(data["answer"])
+        return answer in context
+    elif isinstance(data, str):
+        context = normalize_answer(context)
+        answer = normalize_answer(data)
         return answer in context

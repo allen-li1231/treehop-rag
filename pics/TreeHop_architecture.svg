@@ -1,0 +1,108 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="453pt" height="213.9pt" viewBox="0 0 453 213.9">
+<defs>
+  <marker id="aGrey" viewBox="0 0 4.5 4.5" refX="2.25" refY="2.25" markerWidth="4.5" markerHeight="4.5" markerUnits="userSpaceOnUse" orient="auto"><path d="M0,0.62 L4.5,2.25 L0,3.88 Z" fill="#8A929B"/></marker>
+  <marker id="aAmber" viewBox="0 0 4.5 4.5" refX="2.25" refY="2.25" markerWidth="4.5" markerHeight="4.5" markerUnits="userSpaceOnUse" orient="auto"><path d="M0,0.62 L4.5,2.25 L0,3.88 Z" fill="#A0742B"/></marker>
+  <marker id="aGreen" viewBox="0 0 4.5 4.5" refX="2.25" refY="2.25" markerWidth="4.5" markerHeight="4.5" markerUnits="userSpaceOnUse" orient="auto"><path d="M0,0.62 L4.5,2.25 L0,3.88 Z" fill="#3C7A4E"/></marker>
+</defs>
+<style>
+  .sans  { font-family: "Nimbus Sans","Helvetica","Arial",sans-serif; }
+  .serif { font-family: "Nimbus Roman","Times New Roman","Times",serif; }
+  .ptitle { font-size: 8.4px; font-weight: bold; fill: #1B1F24; }
+</style>
+<text class="sans ptitle" x="6" y="10">(a)<tspan dx="5" font-weight="bold">The update rule: three terms, three roles</tspan></text>
+<circle cx="108.62" cy="41" r="8" fill="#FFFFFF" stroke="#8A929B" stroke-width="1"/><path d="M104.12,41 L113.12,41" stroke="#4A5058" stroke-width="1.4" stroke-linecap="round"/>
+<circle cx="237.97" cy="41" r="8" fill="#FFFFFF" stroke="#8A929B" stroke-width="1"/><path d="M233.47,41 L242.47,41 M237.97,36.5 L237.97,45.5" stroke="#4A5058" stroke-width="1.4" stroke-linecap="round"/>
+<path d="M361.15,38 L371.15,38 M361.15,44 L371.15,44" stroke="#4A5058" stroke-width="1.4" stroke-linecap="round"/>
+<rect x="22.88" y="28" width="42.515" height="26" rx="3.5" fill="#EEF0FA" stroke="#4A5AA8" stroke-width="1.0"/>
+<rect x="29.88" y="37.75" width="3.4" height="6.5" fill="#8B96C9"/><rect x="34.18" y="37.75" width="3.4" height="6.5" fill="#B4BCDD"/><rect x="38.48" y="37.75" width="3.4" height="6.5" fill="#7581BF"/><rect x="42.78" y="37.75" width="3.4" height="6.5" fill="#A7B0D6"/>
+<text class="serif" x="49.47" y="43.78" font-size="8.4" fill="#39468A" font-style="italic">q<tspan font-size="5.208" dy="-3.192">(t)</tspan></text>
+<rect x="394.947" y="28" width="48.605" height="26" rx="3.5" fill="#EEF0FA" stroke="#4A5AA8" stroke-width="1.2"/>
+<rect x="401.95" y="37.75" width="3.4" height="6.5" fill="#8B96C9"/><rect x="406.25" y="37.75" width="3.4" height="6.5" fill="#B4BCDD"/><rect x="410.55" y="37.75" width="3.4" height="6.5" fill="#7581BF"/><rect x="414.85" y="37.75" width="3.4" height="6.5" fill="#A7B0D6"/>
+<text class="serif" x="421.54" y="43.78" font-size="8.4" fill="#39468A" font-style="italic">q<tspan font-size="5.208" dy="-3.192">(t+1)</tspan></text>
+<rect x="136.00" y="28" width="74.60" height="26" rx="4" fill="#F7F0E0" stroke="#A0742B" stroke-width="1.2"/>
+<text class="sans" x="145.56" y="43.52" font-size="6.9" fill="#7E5A1D" font-weight="bold">ForgetGate<tspan font-family="'Nimbus Roman','Times',serif" font-weight="normal" font-style="italic">(q</tspan><tspan font-family="'Nimbus Roman','Times',serif" font-weight="normal" font-size="4.278" dy="-2.622">(t)</tspan><tspan font-family="'Nimbus Roman','Times',serif" font-weight="normal" font-style="italic" dy="2.622">, c)</tspan></text>
+<rect x="264.31" y="28" width="76.49" height="26" rx="4" fill="#E8F1E9" stroke="#3C7A4E" stroke-width="1.2"/>
+<text class="sans" x="273.80" y="43.52" font-size="6.9" fill="#2E6440" font-weight="bold">UpdateGate<tspan font-family="'Nimbus Roman','Times',serif" font-weight="normal" font-style="italic">(q</tspan><tspan font-family="'Nimbus Roman','Times',serif" font-weight="normal" font-size="4.278" dy="-2.622">(t)</tspan><tspan font-family="'Nimbus Roman','Times',serif" font-weight="normal" font-style="italic" dy="2.622">, c)</tspan></text>
+<text class="serif" x="5.02" y="23.00" font-size="6" fill="#7A828C" font-style="italic">&#8220;grandfather of Donald Trump&#8221;</text>
+<text class="sans" x="21.94" y="62.60" font-size="5.9" fill="#5D646C">what the query is</text>
+<text class="sans" x="23.34" y="70.90" font-size="5.9" fill="#5D646C">still being asked</text>
+<text class="serif" x="134.82" y="23.00" font-size="6" fill="#7A828C" font-style="italic">cancels &#8220;grandfather of Trump&#8221;</text>
+<text class="sans" x="142.10" y="62.60" font-size="5.9" fill="#5D646C">subtract what the chunk</text>
+<text class="sans" x="146.19" y="70.90" font-size="5.9" fill="#5D646C">has already resolved</text>
+<text class="serif" x="277.77" y="23.00" font-size="6" fill="#7A828C" font-style="italic">keeps &#8220;Fred Trump&#8221;</text>
+<text class="sans" x="273.69" y="62.60" font-size="5.9" fill="#5D646C">inject the bridge entity</text>
+<text class="sans" x="271.44" y="70.90" font-size="5.9" fill="#5D646C">needed for the next hop</text>
+<text class="serif" x="390.52" y="23.00" font-size="6" fill="#7A828C" font-style="italic">&#8220;father of Fred Trump&#8221;</text>
+<text class="sans" x="392.11" y="62.60" font-size="5.9" fill="#5D646C">query embedding for</text>
+<text class="sans" x="403.17" y="70.90" font-size="5.9" fill="#5D646C">the next hop</text>
+<line x1="4" y1="77.9" x2="449" y2="77.9" stroke="#E2E5EA" stroke-width="0.8"/>
+<text class="sans ptitle" x="6" y="89.9">(b)<tspan dx="5" font-weight="bold">One cross-attention, taken along the embedding dimensions rather than token positions</tspan></text>
+<rect x="6" y="102.9" width="441" height="48" rx="4" fill="#FAF5E9"/>
+<text class="sans" x="5.44" y="99.90" font-size="6.4" fill="#A0742B" font-weight="bold">ForgetGate</text>
+<text class="sans" x="395.49" y="99.90" font-size="6.2" fill="#A0742B" font-style="italic">subtracted from <tspan font-family="'Nimbus Roman','Times',serif" font-style="italic">q</tspan></text>
+<text class="sans" x="13.86" y="129.01" font-size="5.8" fill="#2A2F36" font-weight="bold">softmax</text>
+<rect x="40.19" y="106.40" width="115.94" height="41.00" rx="6" fill="#F4F5F7" stroke="#C2C8CF" stroke-width="0.9"/>
+<text class="serif" x="71.08" y="120.63" font-size="9" fill="#2A2F36" font-style="italic">Q<tspan font-size="6.120" dy="1.980">f</tspan><tspan dy="-1.980">(</tspan><tspan fill="#39468A">q</tspan>)</text>
+<rect x="97.42" y="114.40" width="3.4" height="6.5" fill="#8B96C9"/><rect x="101.72" y="114.40" width="3.4" height="6.5" fill="#B4BCDD"/><rect x="106.02" y="114.40" width="3.4" height="6.5" fill="#7581BF"/><rect x="110.32" y="114.40" width="3.4" height="6.5" fill="#A7B0D6"/><rect x="114.62" y="114.40" width="3.4" height="6.5" fill="#8B96C9"/><rect x="118.92" y="114.40" width="3.4" height="6.5" fill="#B4BCDD"/><rect x="123.22" y="114.40" width="3.4" height="6.5" fill="#7581BF"/><rect x="127.52" y="114.40" width="3.4" height="6.5" fill="#A7B0D6"/><rect x="131.82" y="114.40" width="3.4" height="6.5" fill="#8B96C9"/><rect x="136.12" y="114.40" width="3.4" height="6.5" fill="#B4BCDD"/><rect x="140.42" y="114.40" width="3.4" height="6.5" fill="#7581BF"/><rect x="144.72" y="114.40" width="3.4" height="6.5" fill="#A7B0D6"/>
+<text class="serif" x="72.10" y="139.13" font-size="9" fill="#2A2F36" font-style="italic">K<tspan font-size="6.120" dy="1.980">f</tspan><tspan dy="-1.980">(</tspan><tspan fill="#2E7D8F">c</tspan>)</text>
+<rect x="97.42" y="132.90" width="3.4" height="6.5" fill="#5E9BAA"/><rect x="101.72" y="132.90" width="3.4" height="6.5" fill="#A8CDD5"/><rect x="106.02" y="132.90" width="3.4" height="6.5" fill="#7FB3BF"/><rect x="110.32" y="132.90" width="3.4" height="6.5" fill="#93C0CA"/><rect x="114.62" y="132.90" width="3.4" height="6.5" fill="#5E9BAA"/><rect x="118.92" y="132.90" width="3.4" height="6.5" fill="#A8CDD5"/><rect x="123.22" y="132.90" width="3.4" height="6.5" fill="#7FB3BF"/><rect x="127.52" y="132.90" width="3.4" height="6.5" fill="#93C0CA"/><rect x="131.82" y="132.90" width="3.4" height="6.5" fill="#5E9BAA"/><rect x="136.12" y="132.90" width="3.4" height="6.5" fill="#A8CDD5"/><rect x="140.42" y="132.90" width="3.4" height="6.5" fill="#7FB3BF"/><rect x="144.72" y="132.90" width="3.4" height="6.5" fill="#93C0CA"/>
+<line x1="99.12" y1="120.90" x2="99.12" y2="132.90" stroke="#B6BCC4" stroke-width="0.5" stroke-dasharray="1 1.3"/>
+<line x1="103.42" y1="120.90" x2="103.42" y2="132.90" stroke="#B6BCC4" stroke-width="0.5" stroke-dasharray="1 1.3"/>
+<line x1="107.72" y1="120.90" x2="107.72" y2="132.90" stroke="#B6BCC4" stroke-width="0.5" stroke-dasharray="1 1.3"/>
+<line x1="112.02" y1="120.90" x2="112.02" y2="132.90" stroke="#B6BCC4" stroke-width="0.5" stroke-dasharray="1 1.3"/>
+<line x1="116.32" y1="120.90" x2="116.32" y2="132.90" stroke="#B6BCC4" stroke-width="0.5" stroke-dasharray="1 1.3"/>
+<line x1="120.62" y1="120.90" x2="120.62" y2="132.90" stroke="#B6BCC4" stroke-width="0.5" stroke-dasharray="1 1.3"/>
+<line x1="124.92" y1="120.90" x2="124.92" y2="132.90" stroke="#B6BCC4" stroke-width="0.5" stroke-dasharray="1 1.3"/>
+<line x1="129.22" y1="120.90" x2="129.22" y2="132.90" stroke="#B6BCC4" stroke-width="0.5" stroke-dasharray="1 1.3"/>
+<line x1="133.52" y1="120.90" x2="133.52" y2="132.90" stroke="#B6BCC4" stroke-width="0.5" stroke-dasharray="1 1.3"/>
+<line x1="137.82" y1="120.90" x2="137.82" y2="132.90" stroke="#B6BCC4" stroke-width="0.5" stroke-dasharray="1 1.3"/>
+<line x1="142.12" y1="120.90" x2="142.12" y2="132.90" stroke="#B6BCC4" stroke-width="0.5" stroke-dasharray="1 1.3"/>
+<line x1="146.42" y1="120.90" x2="146.42" y2="132.90" stroke="#B6BCC4" stroke-width="0.5" stroke-dasharray="1 1.3"/>
+<circle cx="55.19" cy="126.90" r="6" fill="#FFFFFF" stroke="#6E7681" stroke-width="0.9"/>
+<circle cx="55.19" cy="126.90" r="2.1" fill="#4A5058"/>
+<circle cx="184.49" cy="126.90" r="6" fill="#FFFFFF" stroke="#6E7681" stroke-width="0.9"/>
+<circle cx="184.49" cy="126.90" r="2.1" fill="#4A5058"/>
+<rect x="212.856" y="117.9" width="95.75" height="18" rx="3" fill="#EEF0FA" stroke="#4A5AA8" stroke-width="1.1"/>
+<rect x="225.31" y="123.65" width="3.4" height="6.5" fill="#8B96C9"/><rect x="229.61" y="123.65" width="3.4" height="6.5" fill="#B4BCDD"/><rect x="233.91" y="123.65" width="3.4" height="6.5" fill="#7581BF"/><rect x="238.21" y="123.65" width="3.4" height="6.5" fill="#A7B0D6"/><rect x="242.51" y="123.65" width="3.4" height="6.5" fill="#8B96C9"/><rect x="246.81" y="123.65" width="3.4" height="6.5" fill="#B4BCDD"/><rect x="251.11" y="123.65" width="3.4" height="6.5" fill="#7581BF"/><rect x="255.41" y="123.65" width="3.4" height="6.5" fill="#A7B0D6"/><rect x="259.71" y="123.65" width="3.4" height="6.5" fill="#8B96C9"/><rect x="264.01" y="123.65" width="3.4" height="6.5" fill="#B4BCDD"/><rect x="268.31" y="123.65" width="3.4" height="6.5" fill="#7581BF"/><rect x="272.61" y="123.65" width="3.4" height="6.5" fill="#A7B0D6"/>
+<text class="serif" x="278.83" y="129.88" font-size="9" fill="#2A2F36" font-style="italic">V<tspan font-size="6.120" dy="1.980">f</tspan><tspan dy="-1.980">(</tspan><tspan fill="#39468A">q</tspan>)</text>
+<line x1="310.61" y1="126.90" x2="327.97" y2="126.90" stroke="#A0742B" stroke-width="1.1"/>
+<path d="M318.29,126.90 L319.29,126.90 L320.29,126.90" fill="none" stroke="none" marker-mid="url(#aAmber)"/>
+<rect x="329.973" y="117.9" width="109.028" height="18" rx="3" fill="#F7F0E0" stroke="#A0742B" stroke-width="1.0"/>
+<rect x="343.04" y="123.65" width="3.4" height="6.5" fill="#C6A263"/><rect x="347.34" y="123.65" width="3.4" height="6.5" fill="#DCC493"/><rect x="351.64" y="123.65" width="3.4" height="6.5" fill="#B8934F"/><rect x="355.94" y="123.65" width="3.4" height="6.5" fill="#D2B57F"/><rect x="360.24" y="123.65" width="3.4" height="6.5" fill="#C6A263"/><rect x="364.54" y="123.65" width="3.4" height="6.5" fill="#DCC493"/><rect x="368.84" y="123.65" width="3.4" height="6.5" fill="#B8934F"/><rect x="373.14" y="123.65" width="3.4" height="6.5" fill="#D2B57F"/><rect x="377.44" y="123.65" width="3.4" height="6.5" fill="#C6A263"/><rect x="381.74" y="123.65" width="3.4" height="6.5" fill="#DCC493"/><rect x="386.04" y="123.65" width="3.4" height="6.5" fill="#B8934F"/><rect x="390.34" y="123.65" width="3.4" height="6.5" fill="#D2B57F"/>
+<text class="sans" x="396.73" y="129.05" font-size="5.9" fill="#A0742B">ForgetGate</text>
+<rect x="6" y="160.9" width="441" height="48" rx="4" fill="#F1F7F3"/>
+<text class="sans" x="5.52" y="157.90" font-size="6.4" fill="#3C7A4E" font-weight="bold">UpdateGate</text>
+<text class="sans" x="414.17" y="157.90" font-size="6.2" fill="#3C7A4E" font-style="italic">added to <tspan font-family="'Nimbus Roman','Times',serif" font-style="italic">q</tspan></text>
+<text class="sans" x="13.86" y="187.01" font-size="5.8" fill="#2A2F36" font-weight="bold">softmax</text>
+<rect x="40.19" y="164.40" width="115.94" height="41.00" rx="6" fill="#F4F5F7" stroke="#C2C8CF" stroke-width="0.9"/>
+<text class="serif" x="69.73" y="178.63" font-size="9" fill="#2A2F36" font-style="italic">Q<tspan font-size="6.120" dy="1.980">u</tspan><tspan dy="-1.980">(</tspan><tspan fill="#39468A">q</tspan>)</text>
+<rect x="97.42" y="172.40" width="3.4" height="6.5" fill="#8B96C9"/><rect x="101.72" y="172.40" width="3.4" height="6.5" fill="#B4BCDD"/><rect x="106.02" y="172.40" width="3.4" height="6.5" fill="#7581BF"/><rect x="110.32" y="172.40" width="3.4" height="6.5" fill="#A7B0D6"/><rect x="114.62" y="172.40" width="3.4" height="6.5" fill="#8B96C9"/><rect x="118.92" y="172.40" width="3.4" height="6.5" fill="#B4BCDD"/><rect x="123.22" y="172.40" width="3.4" height="6.5" fill="#7581BF"/><rect x="127.52" y="172.40" width="3.4" height="6.5" fill="#A7B0D6"/><rect x="131.82" y="172.40" width="3.4" height="6.5" fill="#8B96C9"/><rect x="136.12" y="172.40" width="3.4" height="6.5" fill="#B4BCDD"/><rect x="140.42" y="172.40" width="3.4" height="6.5" fill="#7581BF"/><rect x="144.72" y="172.40" width="3.4" height="6.5" fill="#A7B0D6"/>
+<text class="serif" x="70.75" y="197.13" font-size="9" fill="#2A2F36" font-style="italic">K<tspan font-size="6.120" dy="1.980">u</tspan><tspan dy="-1.980">(</tspan><tspan fill="#2E7D8F">c</tspan>)</text>
+<rect x="97.42" y="190.90" width="3.4" height="6.5" fill="#5E9BAA"/><rect x="101.72" y="190.90" width="3.4" height="6.5" fill="#A8CDD5"/><rect x="106.02" y="190.90" width="3.4" height="6.5" fill="#7FB3BF"/><rect x="110.32" y="190.90" width="3.4" height="6.5" fill="#93C0CA"/><rect x="114.62" y="190.90" width="3.4" height="6.5" fill="#5E9BAA"/><rect x="118.92" y="190.90" width="3.4" height="6.5" fill="#A8CDD5"/><rect x="123.22" y="190.90" width="3.4" height="6.5" fill="#7FB3BF"/><rect x="127.52" y="190.90" width="3.4" height="6.5" fill="#93C0CA"/><rect x="131.82" y="190.90" width="3.4" height="6.5" fill="#5E9BAA"/><rect x="136.12" y="190.90" width="3.4" height="6.5" fill="#A8CDD5"/><rect x="140.42" y="190.90" width="3.4" height="6.5" fill="#7FB3BF"/><rect x="144.72" y="190.90" width="3.4" height="6.5" fill="#93C0CA"/>
+<line x1="99.12" y1="178.90" x2="99.12" y2="190.90" stroke="#B6BCC4" stroke-width="0.5" stroke-dasharray="1 1.3"/>
+<line x1="103.42" y1="178.90" x2="103.42" y2="190.90" stroke="#B6BCC4" stroke-width="0.5" stroke-dasharray="1 1.3"/>
+<line x1="107.72" y1="178.90" x2="107.72" y2="190.90" stroke="#B6BCC4" stroke-width="0.5" stroke-dasharray="1 1.3"/>
+<line x1="112.02" y1="178.90" x2="112.02" y2="190.90" stroke="#B6BCC4" stroke-width="0.5" stroke-dasharray="1 1.3"/>
+<line x1="116.32" y1="178.90" x2="116.32" y2="190.90" stroke="#B6BCC4" stroke-width="0.5" stroke-dasharray="1 1.3"/>
+<line x1="120.62" y1="178.90" x2="120.62" y2="190.90" stroke="#B6BCC4" stroke-width="0.5" stroke-dasharray="1 1.3"/>
+<line x1="124.92" y1="178.90" x2="124.92" y2="190.90" stroke="#B6BCC4" stroke-width="0.5" stroke-dasharray="1 1.3"/>
+<line x1="129.22" y1="178.90" x2="129.22" y2="190.90" stroke="#B6BCC4" stroke-width="0.5" stroke-dasharray="1 1.3"/>
+<line x1="133.52" y1="178.90" x2="133.52" y2="190.90" stroke="#B6BCC4" stroke-width="0.5" stroke-dasharray="1 1.3"/>
+<line x1="137.82" y1="178.90" x2="137.82" y2="190.90" stroke="#B6BCC4" stroke-width="0.5" stroke-dasharray="1 1.3"/>
+<line x1="142.12" y1="178.90" x2="142.12" y2="190.90" stroke="#B6BCC4" stroke-width="0.5" stroke-dasharray="1 1.3"/>
+<line x1="146.42" y1="178.90" x2="146.42" y2="190.90" stroke="#B6BCC4" stroke-width="0.5" stroke-dasharray="1 1.3"/>
+<circle cx="55.19" cy="184.90" r="6" fill="#FFFFFF" stroke="#6E7681" stroke-width="0.9"/>
+<circle cx="55.19" cy="184.90" r="2.1" fill="#4A5058"/>
+<circle cx="184.49" cy="184.90" r="6" fill="#FFFFFF" stroke="#6E7681" stroke-width="0.9"/>
+<circle cx="184.49" cy="184.90" r="2.1" fill="#4A5058"/>
+<rect x="212.856" y="175.9" width="95.75" height="18" rx="3" fill="#E6F1F3" stroke="#2E7D8F" stroke-width="1.1"/>
+<rect x="224.86" y="181.65" width="3.4" height="6.5" fill="#5E9BAA"/><rect x="229.16" y="181.65" width="3.4" height="6.5" fill="#A8CDD5"/><rect x="233.46" y="181.65" width="3.4" height="6.5" fill="#7FB3BF"/><rect x="237.76" y="181.65" width="3.4" height="6.5" fill="#93C0CA"/><rect x="242.06" y="181.65" width="3.4" height="6.5" fill="#5E9BAA"/><rect x="246.36" y="181.65" width="3.4" height="6.5" fill="#A8CDD5"/><rect x="250.66" y="181.65" width="3.4" height="6.5" fill="#7FB3BF"/><rect x="254.96" y="181.65" width="3.4" height="6.5" fill="#93C0CA"/><rect x="259.26" y="181.65" width="3.4" height="6.5" fill="#5E9BAA"/><rect x="263.56" y="181.65" width="3.4" height="6.5" fill="#A8CDD5"/><rect x="267.86" y="181.65" width="3.4" height="6.5" fill="#7FB3BF"/><rect x="272.16" y="181.65" width="3.4" height="6.5" fill="#93C0CA"/>
+<text class="serif" x="278.38" y="187.88" font-size="9" fill="#2A2F36" font-style="italic">V<tspan font-size="6.120" dy="1.980">u</tspan><tspan dy="-1.980">(</tspan><tspan fill="#2E7D8F">c</tspan>)</text>
+<line x1="310.61" y1="184.90" x2="327.97" y2="184.90" stroke="#3C7A4E" stroke-width="1.1"/>
+<path d="M318.29,184.90 L319.29,184.90 L320.29,184.90" fill="none" stroke="none" marker-mid="url(#aGreen)"/>
+<rect x="329.973" y="175.9" width="109.028" height="18" rx="3" fill="#E8F1E9" stroke="#3C7A4E" stroke-width="1.0"/>
+<rect x="341.97" y="181.65" width="3.4" height="6.5" fill="#7FA98B"/><rect x="346.27" y="181.65" width="3.4" height="6.5" fill="#A9C6B1"/><rect x="350.57" y="181.65" width="3.4" height="6.5" fill="#6B9C79"/><rect x="354.87" y="181.65" width="3.4" height="6.5" fill="#9BBCA4"/><rect x="359.17" y="181.65" width="3.4" height="6.5" fill="#7FA98B"/><rect x="363.47" y="181.65" width="3.4" height="6.5" fill="#A9C6B1"/><rect x="367.77" y="181.65" width="3.4" height="6.5" fill="#6B9C79"/><rect x="372.07" y="181.65" width="3.4" height="6.5" fill="#9BBCA4"/><rect x="376.37" y="181.65" width="3.4" height="6.5" fill="#7FA98B"/><rect x="380.67" y="181.65" width="3.4" height="6.5" fill="#A9C6B1"/><rect x="384.97" y="181.65" width="3.4" height="6.5" fill="#6B9C79"/><rect x="389.27" y="181.65" width="3.4" height="6.5" fill="#9BBCA4"/>
+<text class="sans" x="395.73" y="187.05" font-size="5.9" fill="#3C7A4E">UpdateGate</text>
+<path d="M260.73,135.9 V175.9" fill="none" stroke="#B6BCC4" stroke-width="0.8" stroke-dasharray="2.4 1.8"/>
+<circle cx="260.73" cy="155.9" r="1.6" fill="#B6BCC4"/>
+</svg>
