@@ -26,7 +26,11 @@
 ## Introduction
 TreeHop is a lightweight, embedding-level framework designed to address the computational inefficiencies of traditional recursive retrieval paradigm in the realm of Retrieval-Augmented Generation (RAG). By eliminating the need for iterative LLM-based query rewriting, TreeHop significantly reduces latency while maintaining state-of-the-art performance. It achieves this through dynamic query embedding updates and pruning strategies, enabling a streamlined "Retrieve-Embed-Retrieve" workflow. 
 
-![Simplified Iteration Enabled by TreeHop in RAG system](pics/TreeHop_iteration.svg#gh-light-mode-only)
+
+<div align="center" style="background: white; padding: 10px;">
+  <img src="pics/TreeHop_iteration.svg" alt="Simplified Iteration Enabled by TreeHop in RAG system">
+</div>
+
 
 ## Why TreeHop for Multi-hop Retrieval?
 - **Handle Complex Queries**: Real-world questions often require multiple hops to retrieve relevant information, which traditional retrieval methods struggle with.
