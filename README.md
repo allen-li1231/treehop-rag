@@ -1,4 +1,4 @@
-# TreeHop: Generate and Filter Next Query Embeddings Efficiently for Multi-hop Question Answering
+# TreeHop: Efficient Embedding-Level Query Rewriter
 
 
 [![arXiv](https://img.shields.io/badge/arXiv-2504.20114-b31b1b.svg?style=flat)](https://arxiv.org/abs/2504.20114)
@@ -8,7 +8,7 @@
 
 
 ## Table of Contents
-- [TreeHop: Generate and Filter Next Query Embeddings Efficiently for Multi-hop Question Answering](#treehop-generate-and-filter-next-query-embeddings-efficiently-for-multi-hop-question-answering)
+- [TreeHop: Efficient Embedding-Level Query Rewriter](#treehop-efficient-embedding-level-query-rewriter)
   - [Table of Contents](#table-of-contents)
   - [Introduction](#introduction)
   - [Why TreeHop for Multi-hop Retrieval?](#why-treehop-for-multi-hop-retrieval)
@@ -30,8 +30,8 @@ TreeHop is a lightweight, embedding-level framework designed to address the comp
 
 ## Why TreeHop for Multi-hop Retrieval?
 - **Handle Complex Queries**: Real-world questions often require multiple hops to retrieve relevant information, which traditional retrieval methods struggle with.
-- **Cost-Effective**: 25M parameters vs. billions in existing query rewriters, significantly reducing computational overhead.
-- **Speed**: 99% faster inference compared to iterative LLM approaches, ideal for industrial applications where response speed is crucial.
+- **Cost-Effective**: 0.18B parameters vs. billions in existing query rewriters, significantly reducing computational overhead.
+- **Speed**: 92.8%-97.8% lower retrieval latency than iterative LLM approaches, ideal for industrial applications where response speed is crucial.
 - **Performant**: Maintains high recall with controlled number of retrieved passages, ensuring relevance without overwhelming the system.
 
 ![Main Experiment](pics/main_experiment.png)
@@ -173,6 +173,8 @@ The script will print recall rate and average number of retrieved passages at ea
 > * To change evaluate dataset, replace `2wiki` with `musique` or `multihop_rag`.
 > * Revise `n_hop` and `top_n` to change number of hops and top retrieval settings. 
 > * Toggle `redundant_pruning` and `layerwise_top_pruning` to reproduce our ablation study on stop criterion.
+> * `--revision paper-reproduction` pins the model weights used for the arXiv results. Omit it to evaluate the current weights on `main` instead.
+> * `--embedding_name` selects the retrieval backbone (default `bge-m3`); `--embedding_backend` switches between `hf` and `vllm` encoding.
 
 ```sh
 python evaluation.py \
@@ -192,11 +194,13 @@ For training embedding generation, please refer to code in [init_train_vectors.p
 python training.py --graph_cache_dir ./train_data/
 ```
 
+The gate stack depth is set by `--n_layer` (3 for the released checkpoint) and the normalisation between stacked gates by `--norm`. The corpus supplying the negative pool for contrastive learning is selected with `--negative_dataset`.
+
 
 ## Citation
 ```cite
 @misc{li2025treehopgeneratefilterquery,
-      title={TreeHop: Efficient Embedding-Level Query Rewriter}, 
+      title={TreeHop: Generate and Filter Next Query Embeddings Efficiently for Multi-hop Question Answering}, 
       author={Zhonghao Li and Kunpeng Zhang and Jinghuai Ou and Shuliang Liu and Xuming Hu},
       year={2025},
       eprint={2504.20114},
