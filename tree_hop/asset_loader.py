@@ -101,9 +101,9 @@ def get_tree_hop_model(state_dict: str, model_cls, device="cpu", **hf_model_kwar
 @functools.lru_cache()
 def get_dataset(dataset_name):
     df_QA = pd.read_json(f"eval_data/{dataset_name}_dev_processed.jsonl", lines=True)
-    df_QA = (df_QA[~df_QA["type"].isin([#"comparison", # 2wiki
+    df_QA = (df_QA[~df_QA["type"].isin(["comparison", # 2wiki
                                         # multihop_rag
-                                        #"comparison_query", "null_query", "temporal_query"
+                                        "comparison_query", "null_query", "temporal_query"
                                         ])]
              .reset_index())
     df_QA["set_evidence_title"] = df_QA["supporting_facts"].apply(
