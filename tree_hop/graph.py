@@ -88,10 +88,9 @@ class TreeHopGraph(nx.DiGraph):
         else:
             srs_duplicate_mask = pd.Series([False] * df_passage_layer.shape[0])
 
-        df_passage_layer.loc[:, f"scaled_z__{scoring_col}"] = df_passage_layer[scoring_col]
-        # grouped_layer = df_passage_layer.groupby(["query_idx", "retriever_idx"], sort=False)
-        # srs_max_score = grouped_layer[scoring_col].transform("max")
-        # srs_min_score = grouped_layer[scoring_col].transform("min")
+        grouped_layer = df_passage_layer.groupby(["query_idx", "retriever_idx"], sort=False)
+        srs_max_score = grouped_layer[scoring_col].transform("max")
+        srs_min_score = grouped_layer[scoring_col].transform("min")
         # srs_mean_score = grouped_layer.transform("mean")
         # srs_std_score = grouped_layer.transform("std")
         # z-scores on similarities
@@ -101,9 +100,9 @@ class TreeHopGraph(nx.DiGraph):
         # df_passage_layer.loc[:, f"scaled_z__{scoring_col}"] = (df_passage_layer[f"{scoring_col}"] + 1.) / 2.
         # df_passage_layer.loc[:, f"scaled_z__{scoring_col}"] = (df_passage_layer[f"{scoring_col}"] - df_passage_layer[f"{scoring_col}"].min()) \
         #     / (df_passage_layer[f"{scoring_col}"].max() - df_passage_layer[f"{scoring_col}"].min() + eps)
-        # df_passage_layer.loc[:, f"scaled_z__{scoring_col}"] = \
-        #     (df_passage_layer[f"{scoring_col}"] - srs_min_score) \
-        #     / (srs_max_score - srs_min_score + eps)
+        df_passage_layer.loc[:, f"scaled_z__{scoring_col}"] = \
+            (df_passage_layer[f"{scoring_col}"] - srs_min_score) \
+            / (srs_max_score - srs_min_score + eps)
         # df_passage_layer.loc[:, f"scaled_z__{scoring_col}"] = np.exp(df_passage_layer[f"{scoring_col}"])
 
         df_passage_layer.fillna({f"scaled_z__{scoring_col}": eps}, inplace=True)
